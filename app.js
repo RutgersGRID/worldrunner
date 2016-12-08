@@ -1,3 +1,1 @@
-navigator.webkitGetUserMedia({video: false;
-
-
+navigator.webkitGetUserMedia({video: false});
