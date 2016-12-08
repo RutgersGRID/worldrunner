@@ -8,21 +8,23 @@
     "electron-prebuilt": "^0.31.2"
   },
   "dependencies": {
-    "electron-proxy-agent": "^1.0.2"
+    "electron-proxy-agent": "^1.0.2",
+    "node-7z": "^0.4.0"
   },
   "scripts": {
-    "start": "electron  .",
+    "start": "electron . --enable-logging",
     "package": "electron-packager ./ WorldRunner --all --out ~/Desktop/WorldRunner --version 0.30.2 --overwrite --ignore=node_modules/electron --icon=Icon.icns",
-    "pack": "build --dir",
-    "dist": "build"
+    "postinstall": "install-app-deps",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "build  --x64 --ia32"
   },
   "build": {
     "appId": "edu.rutgers.onelinelearning.worldrunner",
     "mac": {
-      "category": "your.app.category.type"
+      "category": "public.app-category.productivity"
     },
     "win": {
-      "iconUrl": "(windows-only) https link to icon"
+      "iconUrl": "https://www.google.com/url?q=https%3A%2F%2Fonlinelearning.rutgers.edu%2Fsites%2Fall%2Fthemes%2Fdocsresponsive%2Ffavicon.ico&sa=D&sntz=1&usg=AFQjCNHI1L7fBenJiugVu3I-JTPEEt0Qhw"
     }
   },
   "description": "Desktop Runnner for the WorldManager Website.\"",
