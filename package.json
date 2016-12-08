@@ -1,5 +1,5 @@
 {
-  "name": "wm-app",
+  "name": "worldrunner",
   "version": "0.1.0",
   "main": "main.js",
   "devDependencies": {
@@ -10,7 +10,22 @@
     "electron-proxy-agent": "^1.0.2"
   },
   "scripts": {
-	  "start": "electron .",
-	  "package": "electron-packager ./ WorldRunner --all --out ~/Desktop/WorldRunner --version 0.30.2 --overwrite --ignore=node_modules/electron --icon=Icon.icns"
-  }
+    "start": "electron  .",
+    "package": "electron-packager ./ WorldRunner --all --out ~/Desktop/WorldRunner --version 0.30.2 --overwrite --ignore=node_modules/electron --icon=Icon.icns"
+  },
+  "description": "Desktop Runnner for the WorldManager Website.\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RutgersUniversityVirtualWorlds/worldrunner.git"
+  },
+  "keywords": [
+    "electron",
+    "desktop"
+  ],
+  "author": "rianders@docs.rutgers.edu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RutgersUniversityVirtualWorlds/worldrunner/issues"
+  },
+  "homepage": "https://github.com/RutgersUniversityVirtualWorlds/worldrunner#readme"
 }
