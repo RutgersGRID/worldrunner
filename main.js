@@ -32,7 +32,7 @@ app.on('ready', function() {
   //mainWindow.loadUrl('http://onlinelearning.rutgers.edu');
 
   // Open the DevTools.
-  mainWindow.openDevTools();
+//  mainWindow.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

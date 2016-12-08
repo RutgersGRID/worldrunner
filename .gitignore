@@ -3,6 +3,10 @@ logs
 *.log
 npm-debug.log*
 
+# ignore distribution directory
+dist
+
+
 # Runtime data
 pids
 *.pid

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "main.js",
   "devDependencies": {
+    "electron-builder": "^10.6.1",
     "electron-packager": "^8.3.0",
     "electron-prebuilt": "^0.31.2"
   },
@@ -11,7 +12,18 @@
   },
   "scripts": {
     "start": "electron  .",
-    "package": "electron-packager ./ WorldRunner --all --out ~/Desktop/WorldRunner --version 0.30.2 --overwrite --ignore=node_modules/electron --icon=Icon.icns"
+    "package": "electron-packager ./ WorldRunner --all --out ~/Desktop/WorldRunner --version 0.30.2 --overwrite --ignore=node_modules/electron --icon=Icon.icns",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "edu.rutgers.onelinelearning.worldrunner",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    }
   },
   "description": "Desktop Runnner for the WorldManager Website.\"",
   "repository": {
